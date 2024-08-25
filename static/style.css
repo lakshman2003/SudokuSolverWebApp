@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Roboto:wght@300&family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #009FFF;
+    background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);
+    background: linear-gradient(to right, #ec2F4B, #009FFF);
+}
+
+.load{
+    margin-top: 18%;
+}
+.Title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    text-align: center;
+    margin: auto;
+    font-size: 2rem;
+    padding-top: 20px;
+}
+
+
+
+.Input{
+    height: 20px;
+    width: 350px;
+    padding: 5px;
+    font-family: 'Roboto',sans-serif;
+    outline: none;
+    border-radius: 3px;
+    border: none;
+    font-size: 0.7rem;
+}
+
+.Input:focus {
+    border: #3498db;
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+}
+.clicked{
+    border: 3px #13af13 solid;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.div1{
+    width: 55%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.IMG{
+    width: 250px;
+    height: 250px;
+    margin: 0 10px 10px 10px;
+    cursor: pointer;
+    border: 3px white solid;
+}
+.imgBox{
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+}
+#exForm{
+    margin-bottom: 30px;
+}
+
+#loading{
+    position: absolute;
+    z-index: 10;
+    font-size: xx-large;
+    font-weight: 300;
+    display: none;
+    /* background-color: #413b3b; */
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+#Timer{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+.btn{
+    padding: 5px;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #3498db;
+    border-radius: 3px;
+    color: white;
+    border: none;
+}
+
+.btn:hover{
+    background-color: #6aa2c7;
+}
+#solving{
+    position: absolute;
+    z-index: 11;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.loader {
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #3498db;
+    width: 70px;
+    height: 70px;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+    margin-top: 40%;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
